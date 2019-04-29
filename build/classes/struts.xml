@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuarion 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	
+<struts>
+
+	<package name="default" extends="struts-default">
+		<action name="findAll" class="com.main.acf.strutsBasedActions.AppAction" method="findAll">
+			<result name="success">/pages/find/findAll.jsp</result>
+		</action>
+		
+		<action name="idQuery">
+			<result>/pages/forms/idQuery.jsp</result>
+		</action>
+		
+		<action name="findById" class="com.main.acf.strutsBasedActions.AppAction" method="findById">
+			<result name="success">/pages/find/findWithId.jsp</result>
+		</action>
+		
+		<action name="addForm">
+			<result>/pages/forms/addForm.jsp</result>
+		</action>
+		
+		<action name="add" class="com.main.acf.strutsBasedActions.AppAction" method="addElement">
+			<result name="success">/pages/add/add.jsp</result>
+		</action>
+		
+		<action name="deleteByIdForm">
+			<result>/pages/forms/deleteByIdForm.jsp</result>
+		</action>
+		
+		<action name="deleteById" class="com.main.acf.strutsBasedActions.AppAction" method="deleteById">
+			<result name="success">/pages/delete/deletedById.jsp</result>
+		</action>
+		
+		<action name="alterForm">
+			<result>/pages/forms/alterForm.jsp</result>
+		</action>
+		
+		<action name="alterById" class="com.main.acf.strutsBasedActions.AppAction" method="alterById">
+			<result name="success">/pages/alter/alteredById.jsp</result>
+		</action>
+	</package>
+	
+</struts>
